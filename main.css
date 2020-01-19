@@ -1,0 +1,280 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup,
+ var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, 
+header, hgroup, menu, nav, section, summary, time, mark, audio, video
+ { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+strong {
+  font-weight:  bold;
+}
+
+ main {
+   margin: 0 50px;;
+ }
+
+ body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  /* Template Styling for Headers */
+h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-size: 26px;
+  }
+  /* KeyFrames */
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+  @keyframes slideInFromBot {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+  
+  /* Header Styling */
+  header {
+    height: 85px;
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: white;
+  }
+  header .logo {
+    flex-grow: 1 !important;
+    padding-left: 40px !important;
+  }
+  header .logo img {
+    min-width: 100px;
+    max-width: 180px;
+  }
+  
+  header .options {
+    flex-grow: 2 !important;
+  }
+  
+  header span, ul {
+    color: #7e7e7e;
+    list-style-type: none;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header li a {
+    display: block;
+    color: #7e7e7e;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  header li:nth-child(3) a{
+    color: rgb(245, 157, 32);
+  }
+  header li a:hover {
+    color: #111111;
+  }
+  header li:nth-child(3) a:hover{
+    color: rgb(247, 196, 103);
+  }
+  
+  main {
+    height: auto;
+  }
+  
+  /* Main Body Content*/
+  /* Hero Image */
+  /* Grid */
+  .col-6 {
+    width: 50%;
+    height: 100%;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-6.no-flex {
+    display: block
+  }
+
+  .col-4 {
+    width: 33%;
+    /* background-color: rgba(40, 129, 184, 0.74); */
+    background-color: rgba(40, 129, 184);
+    margin: 10px 4%;
+  }
+
+  .col-3 {
+    width: 25%;
+    margin: 0 2%;
+  }
+  
+  #home-header {
+    height: 600px;
+    padding-top: 85px ;
+    display: flex;
+    background-image: url("./growth-water.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+  }
+  
+  #home-header span {
+    color: rgb(89, 194, 89);
+  }
+  
+  #home-header .info {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  
+  #home-header img{
+    width: 100%;
+    animation: 1.5s ease-out 0s 1 slideInFromBot;
+  }
+  
+  /* Sub Header */
+  
+  #home, #about, #testimonials, #client-site, #contact {
+    min-height: 400px;
+    max-height: auto;
+    display: flex;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  #home {
+    background-image: url(./growth-water.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+  }
+  #home .title {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    color: rgb(245, 157, 32);
+  }
+
+  #home .description {
+    margin: 0 15px;;
+  }
+
+  #home h3 {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  #what-we-do h2 {
+    color: rgb(242, 200, 171);
+  }
+
+  #what-we-do {
+    min-height: auto;
+    background-color:#011e41;
+    padding: 60px 30px;
+  }
+  #what-we-do .header {
+    display: flex;
+    margin: 40px 40px 0px 40px;
+  }
+
+  #what-we-do .title-what {
+    margin: 5px 55px 55px 55px;
+  }
+
+  #what-we-do .title-what h2 {
+    margin-bottom: 5px;
+  }
+
+  #what-we-do .title-what h4 {
+    color: white;
+    font-size: 20px;
+    padding-right: 25%;
+  }
+
+  #what-we-do .header hr {
+    width: 30px;
+    color: rgb(242, 200, 171);
+    border: 1px solid;
+    margin: 9px;
+  }
+
+  #what-we-do .header p {
+    color: rgb(242, 200, 171);
+  }
+
+  #what-we-do .box {
+    display: flex;
+  }
+
+  #what-we-do .box img {
+    min-width: 50px;
+    max-width: 60px;
+  }
+  #what-we-do .box h3 {
+    color: white;
+    margin: 15px 0;
+  }
+  #what-we-do .box p {
+    color:#cccccc;
+    line-height: 25px;
+  }
+
+  #what-we-do .box .box-content{
+    border: solid 2px rgb(242, 200, 171);
+  }
+
+  #home-content {
+    height: 400px;
+    display: flex;
+  }
+  
+  #home-content .no-flex {
+    position: relative;
+    top: 25%;
+  }
+  
+  #home-content img {
+    max-width: 330px;
+  }
+  
+  footer {
+    background-color: black;
+    height: 100px;
+  }
+  footer span {
+    color: white;
+  }
+  
