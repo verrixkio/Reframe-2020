@@ -166,7 +166,7 @@ h1 {
   
   /* Sub Header */
   
-  #home, #about, #testimonials, #client-site, #contact {
+  #home, #testimonials, #client-site, #contact {
     min-height: 400px;
     max-height: auto;
     display: flex;
@@ -204,6 +204,7 @@ h1 {
     min-height: auto;
     background-color:#011e41;
     padding: 60px 30px;
+    margin-bottom: 40px;
   }
   #what-we-do .header {
     display: flex;
@@ -255,6 +256,26 @@ h1 {
   #what-we-do .box .box-content{
     border: solid 2px rgb(242, 200, 171);
   }
+
+  #about {
+    min-height: 400px;
+    display: flex;
+  }
+
+  #about img {
+    width: 25%;
+  }
+
+  #partners {
+    display: flex;
+  }
+
+  /* Testimonials */
+  /* Swiper */
+  .swiper-container {
+    width: 600px;
+    height: 300px;
+}
 
   #home-content {
     height: 400px;
