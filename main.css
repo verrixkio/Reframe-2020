@@ -303,6 +303,58 @@ h1 {
     display: flex;
   }
 
+  .partner-head {
+    margin: 40px;
+  }
+  .partner-head hr{
+    width: 30px;
+    color: #104A93;
+    border: 1px solid;
+    display: inline-block;
+  }
+  .partner-head p {
+    display: inline-block;
+    color: #104A93;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #partners .section {
+    display: flex;
+    height: 165px;
+    background-color: #104A93;
+    margin-bottom: 10px;
+  }
+
+  #partners .section img {
+    max-width: 30%;
+    object-fit: cover;
+    min-width: 30%;
+    object-fit: cover;
+  }
+
+  #partners .section .article {
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+  }
+
+  #partners .section .article h3 {
+    color:white;
+  }
+
+  #partners .section .article #title {
+    color: #39729b;
+  }
+
+  #partners .description p{
+    color: #0C3C60;
+    line-height: 22px;
+  }
+
+  #partners .col-6.no-flex {
+    padding: 20px;
+  }
   /* Testimonials */
   /* Swiper */
   .swiper-container {
