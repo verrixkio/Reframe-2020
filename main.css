@@ -260,10 +260,43 @@ h1 {
   #about {
     min-height: 400px;
     display: flex;
+    align-items: center;
+  }
+
+  #about .header {
+    margin-bottom: 60px;
+    float: right;
+    position: relative;
+    bottom: 110px;
+    right: 40px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #about .header hr {
+    width: 30px;
+    color: #104A93;
+    border: 1px solid;
+    margin: 9px;
+    display: inline-block;
+  }
+  #about .header p {
+    display: inline-block;
+    color: #104A93;
   }
 
   #about img {
-    width: 25%;
+    width: 50%;
+  }
+
+  #about #blurb {
+    margin-bottom:10px;
+  }
+
+  #about #title {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-style: italic;
   }
 
   #partners {
@@ -279,7 +312,11 @@ h1 {
 .swiper-slide {
   width: 100%;
 }
-
+/* Client site */
+#client-site img {
+  width: 15%;
+  height: 15%;
+}
   #home-content {
     height: 400px;
     display: flex;
