@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>Reframe</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
   </head>
     <div class="App">
         <header>
@@ -258,9 +260,6 @@
                 <div class="swiper-slide">
                   <div class="content">
                   <p>"The Family Centre has been working with Reframe Leadership Inc for over 10 years. Larry Hulsmans customized strategic planning sessions with our board and executive leadership team which provided us with a clear vision and systematic way forward. Larry is engaging, knowledgeable, current and the ultimate professional. As such I chose to access his coaching services as well. I recommend Reframe Leadership Inc. to my colleagues without hesitation."</p>
-
-
-
                   <p>Pauline Smale </p>
                   <p>CEO</p>
                   <p>The Family Centre</p>
@@ -278,6 +277,9 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
+        <div class="client-header">
+          <h2>Active Client Site</h2>
+        </div>
           <div id="client-site">
             <img src="./media/coril.png">
             <img src="./media/blood.png">
@@ -289,10 +291,25 @@
         </main>
         <footer>
           <span>Contact Us</span>
+          <div class="contact-form">
+            <form action="https://formspree.io/mnqpwaod" method="POST">
+              <input name="name" type="text" class="name1" placeholder="Your Name" required>
+              <br>
+              <input name="email" type="email" class="email" placeholder="Your Email" required><br>
+                
+                <textarea name="message" class="message" placeholder="Message" row="4" required></textarea><br>
+
+              <div class="status">
+              
+              </div>
+
+                <input type="submit" class="submit" value="SEND MESSAGE">
+            </form>
+          </div>
+
         </footer>
       </div>
 </body>
-<script src="./main.js"></script>
 <script src="./node_modules/swiper/js/swiper.min.js"></script>
 <script>
   var mySwiper = new Swiper ('.swiper-container', {

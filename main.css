@@ -145,16 +145,17 @@ h1 {
     height: 600px;
     padding-top: 85px ;
     display: flex;
-    background-image: url("./growth-water.jpg");
+    background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 90% 35%;
+    background-size: contain;
   }
   
   #home-header span {
     color: rgb(89, 194, 89);
   }
-  
+  #home-header h1 {
+    padding-left: 40px;
+  }
   #home-header .info {
     animation: 1s ease-out 0s 1 slideInFromLeft;
   }
@@ -175,10 +176,9 @@ h1 {
   }
   
   #home {
-    background-image: url(./growth-water.jpg);
+    background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 90% 35%;
+    background-size: contain;
   }
   #home .title {
     display: flex;
@@ -361,6 +361,7 @@ h1 {
     background-image: url("./media/asoggetti-LFjxCbhs0QM-unsplash.jpg") ;
     background-size: cover;
     background-position-y: 45%;
+    margin-top: 30px;
   }
   /* Swiper */
 .swiper-container {
@@ -379,10 +380,29 @@ width: 800px;
   color: #464646;
 }
 /* Client site */
+
+#client-site {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+}
 #client-site img {
   width: 15%;
   height: 15%;
 }
+
+.client-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
+.client-header h2 {
+  color: #104A93;
+  text-decoration: underline;
+}
+
   #home-content {
     height: 400px;
     display: flex;

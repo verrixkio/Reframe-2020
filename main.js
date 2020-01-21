@@ -1,19 +1,33 @@
-// const secondBlock = document.getElementById('content2')
-// const header = document.getElementsByTagName('header')
-// const headerHeight = 61
+console.log("testing");
 
-// function setHeader () {
-//   const scrollPoint = window.pageYOffset + headerHeight
+$(document).ready(function () {
+    $('.submit').click(function (event) { 
+        var email = $('.email').val()
+        var name = $('.name1').val()
+        var message = $('.message').val()
+        var statusElm =$('.status')
+        statusElm.empty()
+        if(email.length > 5 && email.includes('@') && email.includes('.')) {
+            statusElm.append('<div>Email is valid</div>')
+        } else {
+            event.preventDefault()
+            statusElm.append('<div>Email is not valid</div>')
+        }
+    
+        if(name.length >= 2) {
+            statusElm.append('<div>Name is valid</div>')
+        } else {
+            event.preventDefault()
+            statusElm.append('<div>Name is not valid</div>')
+        }
+    
+        if(message.length > 10) {
+            statusElm.append('<div>Message is valid</div>')
+        } else {
+            event.preventDefault()
+            statusElm.append('<div>Message is not valid</div>')
+        }
+    })
 
-//   let blockPoint = 61 - (scrollPoint - secondBlock.offsetTop)
-//   if (blockPoint <= 0) { blockPoint = 0 }
 
-//   if (scrollPoint > secondBlock.offsetTop) {
-//     header[0].style = `max-height: ${blockPoint}px;`
-//   } else {
-//     header[0].style = `max-height: ${headerHeight}px;`
-//   }
-//   window.requestAnimationFrame(setHeader)
-// }
-
-// window.requestAnimationFrame(setHeader)
+})
