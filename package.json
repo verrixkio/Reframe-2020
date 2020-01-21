@@ -1,0 +1,24 @@
+{
+  "name": "reframe",
+  "version": "1.0.0",
+  "description": "Reframe main website",
+  "main": "main.js",
+  "dependencies": {
+    "serve": "^11.3.0",
+    "swiper": "^5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verrixkio/Reframe-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verrixkio/Reframe-2020/issues"
+  },
+  "homepage": "https://github.com/verrixkio/Reframe-2020#readme"
+}
