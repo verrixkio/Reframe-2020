@@ -356,13 +356,27 @@ h1 {
     padding: 20px;
   }
   /* Testimonials */
+
+  .testimonial {
+    background-image: url("./media/asoggetti-LFjxCbhs0QM-unsplash.jpg") ;
+    background-size: cover;
+    background-position-y: 45%;
+  }
   /* Swiper */
-  .swiper-container {
-    width: 600px;
-    height: 300px;
+.swiper-container {
+height: 400px;
+width: 800px;
 }
 .swiper-slide {
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide p {
+  padding: 0 100px;
+  font-size: 20px;
+  color: #464646;
 }
 /* Client site */
 #client-site img {
