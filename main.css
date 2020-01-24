@@ -77,8 +77,8 @@ h1 {
     padding-left: 40px !important;
   }
   header .logo img {
-    min-width: 100px;
-    max-width: 180px;
+    min-width: 80px;
+    max-width: 80px;
   }
   
   header .options {
@@ -133,7 +133,7 @@ h1 {
   .col-12{
     width: 100%;
     /* background-color: rgba(40, 129, 184, 0.74); */
-    background-color: rgba(121, 144, 158, 0.85);
+    /* background-color: rgba(121, 144, 158, 0.85); */
   }
 
   .col-3 {
@@ -174,15 +174,22 @@ h1 {
     color: white;
     margin-bottom: 40px;
   }
+
+  .testimonial img {
+    position: absolute;
+    left: 20%;
+  }
   
   #home {
     min-height: 400px;
     max-height: auto;
     display: flex;
     color: white;
-    background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
+    background-color: #104A93;
+    margin: 30px 0;
+    /* background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: contain; */
   }
   #home .title {
     display: flex;
@@ -262,17 +269,14 @@ h1 {
   }
 
   #about {
-    min-height: 400px;
+
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 
   #about .header {
-    margin-bottom: 60px;
     float: right;
-    position: relative;
-    bottom: 110px;
-    right: 40px;
     font-size: 25px;
     font-weight: bold;
   }
@@ -359,6 +363,34 @@ h1 {
   #partners .col-6.no-flex {
     padding: 20px;
   }
+
+  .info2 {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    background-color: #0C3C60;
+  }
+  #contact-us {
+    background-color: #0C3C60;
+    min-height: 400px;
+    max-height: auto;
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  #contact-us .contact-form {
+    color: orange;
+  }
+
+  .name1{
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+  }
+  .message {
+    width: 100%;
+  }
   /* Testimonials */
 
   .testimonial {
@@ -422,10 +454,21 @@ width: 800px;
   }
   
   footer {
-    background-color: black;
+    background-color: #104A93;
     height: 100px;
+    display: flex;
+    justify-content: center;
   }
+  footer img {
+    width: 80px;
+  }
+  footer .center {
+    display: flex;
+    justify-content: center;
+  }
+  
   footer span {
     color: white;
+    display: block;
   }
   
