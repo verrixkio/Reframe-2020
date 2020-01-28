@@ -66,7 +66,29 @@ h1 {
       opacity: 100%;
     }
   }
-  
+  /* Toggles */
+ #home-toggle {
+  position: absolute;
+  top: 50%;
+ }
+ #what-we-do-toggle {
+   position: absolute;
+   top: 120%;
+ }
+ #about-toggle {
+  position: absolute;
+  top: 160%;
+}
+
+#testimonials-toggle {
+  position: absolute;
+  top: 260%;
+}
+
+#contact-toggle {
+  position: absolute;
+  top: 350%;
+}
   /* Header Styling */
   header {
     height: 85px;
@@ -159,7 +181,8 @@ h1 {
     display: flex;
     background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
+    background-position-y: 80%;
   }
   
   #home-header span {
@@ -177,6 +200,11 @@ h1 {
     animation: 1.5s ease-out 0s 1 slideInFromBot;
   }
 
+  #what-we-do .box .col-3 ul {
+    list-style-type: disc;
+    color: #f1f1f1;
+    line-height: 22px;
+  }
   
   /* Sub Header */
   
@@ -223,6 +251,7 @@ h1 {
 
   #home .stats {
     display: flex;
+    align-items: center;
   }
 
   #home .number {
@@ -415,6 +444,7 @@ h1 {
   .overall-contact {
     background-image: url("./media/compass.jpg");
     background-size: cover;
+    background-position-y: 80%;
   }
   .info2 {
     display: flex;
