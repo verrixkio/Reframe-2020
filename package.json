@@ -4,7 +4,8 @@
   "description": "Reframe main website",
   "main": "main.js",
   "dependencies": {
-    "serve": "^11.3.0"
+    "serve": "^11.3.0",
+    "swiper": "^5.3.0"
   },
   "devDependencies": {},
   "scripts": {
