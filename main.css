@@ -113,7 +113,7 @@ h1 {
   }
 
   /* header li:nth-child(3) a{
-    color: rgb(245, 157, 32);
+    color: #F59D20;
   } */
   /* header li:nth-child(3) a:hover{
     color: rgb(247, 196, 103);
@@ -192,6 +192,10 @@ h1 {
     position: absolute;
     left: 20%;
   }
+  .testimonial img.closing {
+    position: absolute;
+    left: 70%;
+  }
   
   #home {
     min-height: 400px;
@@ -209,11 +213,11 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 15px 0;
-    color: rgb(245, 157, 32);
+    color: #F59D20;
   }
 
   #home .description {
-    margin: 0 15px;
+    margin: 0 15px 40px 15px;
     padding: 0 20%;
   }
 
@@ -248,12 +252,12 @@ h1 {
   }
 
   #what-we-do h2 {
-    color: rgb(242, 200, 171);
+    color: #F59D20;
   }
 
   #what-we-do {
     min-height: auto;
-    background-color:#011e41;
+    background-color: #104A93;
     padding: 60px 30px;
     margin-bottom: 40px;
   }
@@ -278,13 +282,13 @@ h1 {
 
   #what-we-do .header hr {
     width: 30px;
-    color: rgb(242, 200, 171);
+    color: #F59D20;
     border: 1px solid;
     margin: 9px;
   }
 
   #what-we-do .header p {
-    color: rgb(242, 200, 171);
+    color: #F59D20;
   }
 
   #what-we-do .box {
@@ -374,6 +378,9 @@ h1 {
     background-color: #104A93;
     margin-bottom: 10px;
   }
+  #partners .section.orange{
+    background-color: #F59D20;
+  }
 
   #partners .section img {
     max-width: 30%;
@@ -397,7 +404,7 @@ h1 {
   }
 
   #partners .description p{
-    color: #0C3C60;
+    color: #104A93;
     line-height: 22px;
   }
 
@@ -405,14 +412,17 @@ h1 {
     padding: 20px;
   }
 
+  .overall-contact {
+    background-image: url("./media/compass.jpg");
+    background-size: cover;
+  }
   .info2 {
     display: flex;
     justify-content: center;
-    color: orange;
-    background-color: #0C3C60;
+    color: #F59D20;
+    padding: 30px;
   }
   #contact-us {
-    background-color: #0C3C60;
     min-height: 400px;
     max-height: auto;
     display: flex;
@@ -420,17 +430,20 @@ h1 {
   }
 
   #contact-us .contact-form {
-    color: orange;
+    color: #F59D20;
   }
 
-  .name1{
+  .name1 {
     width: 100%;
+    margin: 10px 0;
   }
   .email {
     width: 100%;
+    margin-bottom: 10px;
   }
   .message {
     width: 100%;
+    margin-bottom: 10px;
   }
   /* Testimonials */
 
