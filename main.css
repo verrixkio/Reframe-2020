@@ -13,24 +13,6 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
  strong {
   font-weight:  bold;
 }
-
- main {
-   margin: 0 50px;;
- }
-
- body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
     /* KeyFrames */
   
     @keyframes slideInFromLeft {
@@ -53,6 +35,7 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
         opacity: 100%;
       }
     }
+
       /* Toggles */
  #home-toggle {
   position: absolute;
@@ -76,6 +59,29 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
   position: absolute;
   top: 350%;
 }
+
+@media screen and (min-width: 841px){
+  .mobile {
+    display: none;
+  }
+
+ main {
+   margin: 0 50px;;
+ }
+
+ body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
 
   /* Template Styling for Headers */
 h1 {
@@ -560,10 +566,7 @@ width: 800px;
     display: block;
     margin-bottom: 15px;
   }
-@media screen and (min-width: 841px){
-  .mobile {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 840px) {
