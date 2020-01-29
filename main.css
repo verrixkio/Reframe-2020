@@ -31,42 +31,29 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-
-  /* Template Styling for Headers */
-h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 32px;
-    font-weight: 500;
-  }
+    /* KeyFrames */
   
-  h3 {
-    font-size: 26px;
-  }
-  /* KeyFrames */
-  
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-50%);
-      opacity: 0%;
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-50%);
+        opacity: 0%;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 100%;
+      }
     }
-    100% {
-      transform: translateX(0);
-      opacity: 100%;
+    @keyframes slideInFromBot {
+      0% {
+        transform: translateY(-50%);
+        opacity: 0%;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 100%;
+      }
     }
-  }
-  @keyframes slideInFromBot {
-    0% {
-      transform: translateY(-50%);
-      opacity: 0%;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 100%;
-    }
-  }
-  /* Toggles */
+      /* Toggles */
  #home-toggle {
   position: absolute;
   top: 50%;
@@ -89,6 +76,21 @@ h1 {
   position: absolute;
   top: 350%;
 }
+
+  /* Template Styling for Headers */
+h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-size: 26px;
+  }
+
+
   /* Header Styling */
   header {
     height: 85px;
@@ -252,6 +254,7 @@ h1 {
   #home .stats {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   #home .number {
@@ -557,4 +560,170 @@ width: 800px;
     display: block;
     margin-bottom: 15px;
   }
+@media screen and (min-width: 841px){
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  /*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+.desktop {
+  display: none;
+}
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1000;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+nav .logo img {
+  max-width: 150px;;
+}
+.swiper-container{
+  width: 100%;
+}
+}
   
