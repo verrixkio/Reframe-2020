@@ -59,11 +59,72 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
   position: absolute;
   top: 350%;
 }
+ 
+main {
+  height: auto;
+}
+
+/* Main Body Content*/
+/* Hero Image */
+
+#home-header {
+  height: 600px;
+  padding-top: 85px ;
+  display: flex;
+  background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: 80%;
+}
+
+#home-header span {
+  color: rgb(89, 194, 89);
+}
+#home-header h1 {
+  padding-left: 40px;
+}
+#home-header .info {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#home-header img{
+  width: 100%;
+  animation: 1.5s ease-out 0s 1 slideInFromBot;
+}
+.col-6 {
+  width: 50%;
+  height: 100%;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (min-width: 841px){
   .mobile {
-    display: none;
+    display: none !important;
   }
+
+  /* Grid */
+
+
+#home .col-6 {
+  margin: 70px !important;
+}
+.col-6.no-flex {
+  display: block
+}
+
+.col-12{
+  width: 100%;
+  /* background-color: rgba(40, 129, 184, 0.74); */
+  /* background-color: rgba(121, 144, 158, 0.85); */
+}
+
+.col-3 {
+  width: 25%;
+  margin: 0 2%;
+}
 
  main {
    margin: 0 50px;;
@@ -148,65 +209,7 @@ h1 {
   /* header li:nth-child(3) a:hover{
     color: rgb(247, 196, 103);
   } */
-  
-  main {
-    height: auto;
-  }
-  
-  /* Main Body Content*/
-  /* Hero Image */
-  /* Grid */
-  .col-6 {
-    width: 50%;
-    height: 100%;
-    margin: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #home .col-6 {
-    margin: 70px !important;
-  }
-  .col-6.no-flex {
-    display: block
-  }
-
-  .col-12{
-    width: 100%;
-    /* background-color: rgba(40, 129, 184, 0.74); */
-    /* background-color: rgba(121, 144, 158, 0.85); */
-  }
-
-  .col-3 {
-    width: 25%;
-    margin: 0 2%;
-  }
-  
-  #home-header {
-    height: 600px;
-    padding-top: 85px ;
-    display: flex;
-    background-image: url("./media/david-gavi-Ijx8OxvKrgM-unsplash.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-y: 80%;
-  }
-  
-  #home-header span {
-    color: rgb(89, 194, 89);
-  }
-  #home-header h1 {
-    padding-left: 40px;
-  }
-  #home-header .info {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
-  
-  #home-header img{
-    width: 100%;
-    animation: 1.5s ease-out 0s 1 slideInFromBot;
-  }
+ 
 
   #what-we-do .box .col-3 ul {
     list-style-type: disc;
@@ -581,7 +584,11 @@ width: 800px;
  * prefixes.
  */
 .desktop {
-  display: none;
+  display: none !important;
+}
+.mobile.navigating {
+  display: flex;
+  justify-content: space-evenly;
 }
 #menuToggle
 {
@@ -722,11 +729,235 @@ width: 800px;
 {
   transform: none;
 }
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+}
 nav .logo img {
-  max-width: 150px;;
+  max-width: 100px;
 }
 .swiper-container{
   width: 100%;
 }
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+}
+#home-header h1 {
+  padding-left: 20%;
+}
+/* Mobile Home */
+#home {
+  color: white;
+  background-color: #104A93;
+  margin: 30px 0;
+}
+#home .title {
+  display: flex;
+  justify-content: center;
+  color: #F59D20;
+  padding-top: 20px;
+}
+#home .number img {
+  width: 50px;
+  height: 50px;
+}
+#home .number {
+  display: flex;
+}
+
+.col-flex {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .number img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+#home h4 {
+  margin: 0 10px;
+}
+
+#home .description {
+  padding-bottom: 20px;
+}
+
+#what-we-do {
+  background-color: #104A93;
+  color: white;
+  padding: 30px 10px;
+}
+
+.title-what {
+  margin: 10px 0;
+}
+
+.col-3 {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#what-we-do ul {
+  list-style-type: disc;
+  padding: 10px 0px 0 20px;
+}
+
+.wrap {
+  width: 60%;
+}
+
+#partners {
+  
+}
+.partner-head {
+  margin: 40px;
+}
+.partner-head hr{
+  width: 30px;
+  color: #104A93;
+  border: 1px solid;
+  display: inline-block;
+}
+.partner-head p {
+  display: inline-block;
+  color: #104A93;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#partners .section {
+  display: flex;
+  height: 165px;
+  background-color: #104A93;
+  margin-bottom: 10px;
+}
+#partners .section.orange{
+  background-color: #F59D20;
+}
+
+#partners .section img {
+  max-width: 30%;
+  object-fit: cover;
+  min-width: 30%;
+  object-fit: cover;
+}
+
+#partners .section .article {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+}
+
+#partners .section .article h3 {
+  color:white;
+}
+
+#partners .section .article #title {
+  color: #39729b;
+}
+
+#partners .description p{
+  color: #104A93;
+  line-height: 22px;
+}
+
+#partners .col-6.no-flex {
+  padding: 20px;
+}
+
+.col-single {
+  margin: 20px 10px;
+}
+
+  .swiper-slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .swiper-slide p {
+    padding: 0 10px;
+    font-size: 20px;
+    color: #464646;
+  }
+
+  footer {
+    background-color: #104A93;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  footer img {
+    width: 80px;
+  }
+  footer .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer span {
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .testimonial .open {
+    width: 10%;
+    position: relative;
+  }
+
+  .testimonial .closing {
+    width: 10%;
+    position: relative;
+    float: right;
+
+  }
+
+  .overall-contact {
+    background-image: url("./media/compass.jpg");
+    background-size: cover;
+    background-position-y: 80%;
+  }
+  .info2 {
+    display: flex;
+    justify-content: center;
+    color: #F59D20;
+    padding: 30px;
+  }
+  #contact-us {
+    min-height: 400px;
+    max-height: auto;
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  #contact-us .contact-form {
+    color: #F59D20;
+  }
+
+  .testimonial .content {
+    margin: 20px 0;
+  }
+
 }
   

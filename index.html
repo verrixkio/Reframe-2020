@@ -18,6 +18,7 @@
   </head>
     <div class="App">
       <nav class="mobile" role="navigation">
+        <div class="nav-container">
         <div class="logo">
           <img src="./media/transarent-logo.png" alt="website logo"/>
         </div>
@@ -51,6 +52,7 @@
             <li><a href="#contact-toggle">Contact Us</a></li>
           </ul>
         </div>
+      </div>
       </nav>
         <header class="desktop">
           <div class="logo">
@@ -86,19 +88,33 @@
                 <h2>What's At Stake?</h2>
               </div>
               <div class="stats">
-                <div class="col-6"> 
+                <div class="col-6 desktop"> 
                   <div class="number">
                     <h3>70</h3>
                     <img src="./media/percentage.png">
                   </div>
                     <h3>of employees are unengaged in organtizations.</h3>
                 </div>
-                <div class="col-6">
+                <div class="col-6 desktop">
                   <div class="number">
                     <h3>80</h3>
                     <img src="./media/percentage.png">
                   </div>
                   <h3>of employees leave organizations as a result of a poor relationship with their boss.</h3>
+                </div>
+                <div class="col-flex mobile"> 
+                  <div class="number">
+                    <h3>70</h3>
+                    <img src="./media/percentage.png">
+                  </div>
+                    <h4>of employees are unengaged in organtizations.</h4>
+                </div>
+                <div class="col-flex mobile">
+                  <div class="number">
+                    <h3>80</h3>
+                    <img src="./media/percentage.png">
+                  </div>
+                  <h4>of employees leave organizations as a result of a poor relationship with their boss.</h4>
                 </div>
               </div>
               <div class="description">
@@ -119,7 +135,7 @@
               <h4>Reframe works in deep partnership with the executive team to enable them to lead the transformation of their own organization.</h4>
             </div>
             <div class="box">
-              <div class="col-3">
+              <div class="col-3 desktop">
                 <img src="./handshake.png" alt="handshake icon">
                 <h3>Cultural Transformation</h3>
                 <ul>
@@ -128,7 +144,7 @@
                   <li>Defining and Transitioning Culture.</li>
                 </ul>
               </div>
-              <div class="col-3">
+              <div class="col-3 desktop">
                 <img src="./leader.png" alt="handshake icon">
                 <h3>Leadership Development</h3>
                 <ul>
@@ -137,7 +153,7 @@
                   <li>Lead and Empower Others and Teams</li>
                 </ul>
               </div>
-              <div class="col-3">
+              <div class="col-3 desktop">
                 <img src="./team.png" alt="handshake icon">
                 <h3>Team Development</h3>
                 <ul>
@@ -146,7 +162,7 @@
                   <li>Enhance Meeting Effectiveness</li>
                 </ul>
               </div>
-              <div class="col-3">
+              <div class="col-3 desktop">
                 <img src="./idea.png" alt="handshake icon">
                 <h3>Individual and Group Coaching</h3>
                 <ul>
@@ -154,6 +170,51 @@
                   <li>Board Level Coaching and Support</li>
                   <li>Individual Coaching</li>
                 </ul>
+              </div>
+              <!-- Mobile Sections -->
+              <div class="col-3 mobile">
+                <div class="wrap">
+                  <img src="./handshake.png" alt="handshake icon">
+                  <h3>Cultural Transformation</h3>
+                  <ul>
+                    <li>Strategic Clarity and Direction.</li>
+                    <li>Executive Team Alignment and Engagement.</li>
+                    <li>Defining and Transitioning Culture.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-3 mobile">
+                <div class="wrap">
+                  <img src="./leader.png" alt="handshake icon">
+                  <h3>Leadership Development</h3>
+                  <ul>
+                    <li>Leadership Development at the Identity Level.</li>
+                    <li>Creating Presence, Resilience and Capacity.</li>
+                    <li>Lead and Empower Others and Teams</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-3 mobile">
+                <div class="wrap">
+                  <img src="./team.png" alt="handshake icon">
+                  <h3>Team Development</h3>
+                  <ul>
+                    <li>Enhance Team Relationships, Communication and Accountability</li>
+                    <li>Create Strategic Clarity and Ability to Execute</li>
+                    <li>Enhance Meeting Effectiveness</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-3 mobile">
+                <div class="wrap">
+                  <img src="./idea.png" alt="handshake icon">
+                  <h3>Individual and Group Coaching</h3>
+                  <ul>
+                    <li>CEO and Executive Team Coaching</li>
+                    <li>Board Level Coaching and Support</li>
+                    <li>Individual Coaching</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -195,7 +256,7 @@
             <p> OUR TEAM</p>
           </div>
         </div>
-          <div id="partners">
+          <div id="partners" class="desktop">
             <div class="col-6 no-flex">
               <div class="section orange">
                 <img class="larry" src="LH Photo.jpg" alt="Larry Photo">
@@ -229,7 +290,7 @@
               </div>
             </div>
           </div>
-          <div id="partners">
+          <div id="partners" class="desktop">
             <div class="col-6 no-flex">
               <div class="section orange">
                 <img class="erin" src="erin.jpeg" alt="Erin Photo">
@@ -263,7 +324,7 @@
               </div>
             </div>
           </div>
-          <div id="partners">
+          <div id="partners" class="desktop">
             <div class="col-6 no-flex">
               <div class="section orange">
                 <img class="Colin" src="Colin .jpg" alt="Colin Photo">
@@ -297,10 +358,113 @@
               </div>
             </div>
         </div>
+        <!-- Mobile Partners -->
+        <div id="partners" class="mobile">
+          <div class="col-single">
+            <div class="section orange">
+              <img class="larry" src="LH Photo.jpg" alt="Larry Photo">
+              <div class="article">
+                <div class="name">
+                  <h3>Larry Hulsmans</h3>
+                  <h3 id="title">Founder & Integrator</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                Larry has deep experience in the development of leadership in others spanning more than 25 years in the private and public sectors.   He is a Certified Presence Based coach and has degrees from the Royal Military College of Canada and Queen's University.   Larry is also a faculty member for the University of Alberta School of Business and Executive Education.
+              </p>
+            </div>
+          </div>
+          <div class="col-single">
+            <div class="section">
+              <img class="ginette" src="L1NnsmamSiCDozv1ZIqbBQ_thumb_406.jpg" alt="GinettePhoto">
+              <div class="article">
+                <div class="name">
+                  <h3>Ginette Gamache</h3>
+                  <h3 id="title">Coach Lead</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                Ginette is an experienced coach, facilitator, educator, and counsellor. Ginette has a Bachelors of Education with a minor in Psychology and a Masters of Counselling Psychology. Ginette is an excellent coach with a reputation for helping people develop the insights they need to be more effective leaders and coaches.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="partners" class="mobile">
+          <div class="col-single">
+            <div class="section orange">
+              <img class="erin" src="erin.jpeg" alt="Erin Photo">
+              <div class="article">
+                <div class="name">
+                  <h3>Erin Waddell</h3>
+                  <h3 id="title">Facilitator & Coach</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                As a Professional Certified Coach (PCC) and member of the International Coaching Federation, Erin focuses on practical leadership development. Either through one-on-one sessions or learning workshops in personal or virtual, Erin works with executives and leaders, helping them develop the leadership competencies needed to deliver on organizational strategies.
+              </p>
+            </div>
+          </div>
+          <div class="col-single">
+            <div class="section">
+              <img class="mike" src="Mike.jpg" alt="Mike Photo">
+              <div class="article">
+                <div class="name">
+                  <h3>Mike Shaw</h3>
+                  <h3 id="title">Experiential Lead</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                Mike has been an experiential facilitator  for over 25 years. He has gained a strong reputation for his ability to create an environment of trust, safety and confidence. As a member of the Association of Canadian Mountain Guides (ACMG) and Association of Challenge Course Technology (ACCT), Mike has designed and constructed a number of challenge course facilities in Western Canada.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="partners" class="mobile">
+          <div class="col-single">
+            <div class="section orange">
+              <img class="Colin" src="Colin .jpg" alt="Colin Photo">
+              <div class="article">
+                <div class="name">
+                  <h3>Colin Funk</h3>
+                  <h3 id="title">Creative Lead</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                Colin Funk has spent the last 25 years working as a facilitator, director and theatre producer throughout western Canada. Former director of the Leadership Learning Lab and Creativity and Innovation at The Banff Centre, Colin currently works as a creative process facilitator focussing on leadership development using experiential and creative processes.
+              </p>
+            </div>
+          </div>
+          <div class="col-single">
+            <div class="section">
+              <img class="franc" src="Franc.jpg" alt="Franc Photo">
+              <div class="article">
+                <div class="name">
+                  <h3>Franc Godri</h3>
+                  <h3 id="title">Facilitator & Coach</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                As an officer, pilot, international arms inspector and corporate executive, Franc worked and led within deeply ingrained leadership and performance cultures. During this time, he occasionally witnessed the sometimes obsessive focus on bottom line goals where employees were systems to be managed instead of gifted team members to be lead.
+              </p>
+            </div>
+          </div>
+      </div>
         <div id="testimonials-toggle">
         </div>
         <div class="testimonial">
-          <img src="media/quote.png" alt="opening quote">
+          <img class="open" src="media/quote.png" alt="opening quote">
           <img class="closing" src="media/quote (1).png" alt="closing quote">
          <!-- Slider main container -->
           <div class="swiper-container">
@@ -364,8 +528,8 @@
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev desktop"></div>
+            <div class="swiper-button-next desktop"></div>
 
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
