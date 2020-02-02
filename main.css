@@ -37,17 +37,20 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
     }
 
       /* Toggles */
+
+  .toggle {
+    background-color: red;
+    position: relative;
+     top: -250px;
+     height: 2px;
+  }
  #home-toggle {
   position: absolute;
-  top: 50%;
+  top: 0px;
  }
- #what-we-do-toggle {
-   position: absolute;
-   top: 120%;
- }
- #about-toggle {
+ /* #about-toggle {
   position: absolute;
-  top: 160%;
+  top: 1500px;
 }
 
 #testimonials-toggle {
@@ -58,7 +61,7 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
 #contact-toggle {
   position: absolute;
   top: 350%;
-}
+} */
  
 main {
   height: auto;
@@ -321,15 +324,24 @@ h1 {
     padding-right: 25%;
   }
 
-  #what-we-do .header hr {
+  #what-we-do-toggle {
+    display: flex;
+  }
+  #what-we-do-toggle .header {
+    font-size: 25px;
+    font-weight: bold;
+}
+  #what-we-do-toggle .header hr {
     width: 30px;
     color: #F59D20;
     border: 1px solid;
     margin: 9px;
+    display: inline-block;
   }
 
-  #what-we-do .header p {
+  #what-we-do-toggle .header p {
     color: #F59D20;
+    display: inline-block;
   }
 
   #what-we-do .box {
@@ -494,6 +506,26 @@ h1 {
     background-size: cover;
     background-position-y: 45%; */
     margin-bottom: 40px;
+  }
+
+  #testimonials-toggle1 {
+    display: flex;
+  }
+  #testimonials-toggle1 .header {
+    font-size: 25px;
+    font-weight: bold;
+}
+  #testimonials-toggle1 .header hr {
+    width: 30px;
+    color: #F59D20;
+    border: 1px solid;
+    margin: 9px;
+    display: inline-block;
+  }
+
+  #testimonials-toggle1 .header p {
+    color: #F59D20;
+    display: inline-block;
   }
   /* Swiper */
 .swiper-container {
@@ -1008,6 +1040,49 @@ color: #F59D20;
   .message {
     width: 95%;
     margin-bottom: 10px;
+  }
+
+
+  #what-we-do-toggle {
+    display: flex;
+  }
+  #what-we-do-toggle .header {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 5px;
+}
+  #what-we-do-toggle .header hr {
+    width: 30px;
+    color: #F59D20;
+    border: 1px solid;
+    margin: 9px;
+    display: inline-block;
+  }
+
+  #what-we-do-toggle .header p {
+    color: #F59D20;
+    display: inline-block;
+  }
+
+  #testimonials-toggle1 {
+    display: flex;
+  }
+  #testimonials-toggle1 .header {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 5px;
+}
+  #testimonials-toggle1 .header hr {
+    width: 30px;
+    color: #F59D20;
+    border: 1px solid;
+    margin: 9px;
+    display: inline-block;
+  }
+
+  #testimonials-toggle1 .header p {
+    color: #F59D20;
+    display: inline-block;
   }
 
 }
