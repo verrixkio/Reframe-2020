@@ -42,7 +42,6 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
     background-color: red;
     position: relative;
      top: -250px;
-     height: 2px;
   }
  #home-toggle {
   position: absolute;
@@ -74,7 +73,7 @@ main {
   height: 600px;
   padding-top: 85px ;
   display: flex;
-  background-image: url("./media/mountainHero.jpg");
+  background-image: url("./media/reducedmountain.jpeg");
   background-attachment: fixed;
   background-size: cover;
   background-position-y: 80%;
@@ -330,6 +329,7 @@ h1 {
   #what-we-do-toggle .header {
     font-size: 25px;
     font-weight: bold;
+    margin: 0 30px 30px;
 }
   #what-we-do-toggle .header hr {
     width: 30px;
@@ -466,7 +466,7 @@ h1 {
   }
 
   .overall-contact {
-    background-image: url("./media/compass.jpg");
+    background-image: url("./media/compass.png");
     background-size: cover;
     background-position-y: 80%;
   }
@@ -1004,7 +1004,7 @@ color: #F59D20;
   }
 
   .overall-contact {
-    background-image: url("./media/compass.jpg");
+    background-image: url("./media/compass.png");
     background-size: cover;
     background-position-y: 80%;
   }
