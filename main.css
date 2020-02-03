@@ -73,7 +73,7 @@ main {
   height: 600px;
   padding-top: 85px ;
   display: flex;
-  background-image: url("./media/mtn-man.jpeg");
+  background-image: url("./media/hero-image.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position-y: 80%;
