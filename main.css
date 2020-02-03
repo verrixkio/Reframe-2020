@@ -358,6 +358,7 @@ h1 {
   #what-we-do-toggle .header p {
     color: #F59D20;
     display: inline-block;
+
   }
 
   #what-we-do .box {
@@ -542,6 +543,7 @@ h1 {
   #testimonials-toggle1 .header p {
     color: #F59D20;
     display: inline-block;
+    margin-bottom: 20px;
   }
   /* Swiper */
 .swiper-container {
