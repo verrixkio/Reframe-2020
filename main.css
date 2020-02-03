@@ -182,6 +182,7 @@ h1 {
   
   header .options {
     flex-grow: 2 !important;
+    padding-right: 50px;
   }
   
   header span, ul {
