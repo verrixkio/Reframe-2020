@@ -1149,6 +1149,9 @@ color: #F59D20;
     color: #F59D20;
     display: inline-block;
   }
+  #home .number h3 {
+    color: #F59D20
+  }
 
 }
   
