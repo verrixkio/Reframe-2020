@@ -76,7 +76,7 @@ main {
   background-image: url("./media/hero-image.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-position-y: 80%;
+  background-position-y: -70px;
 }
 
 #home-header span {
