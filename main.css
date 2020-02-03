@@ -495,7 +495,7 @@ h1 {
   }
 
   .overall-contact {
-    background-image: url("./media/compass.png");
+    /* background-image: url("./media/compass.png"); */
     background-size: cover;
     background-position-y: 80%;
   }
@@ -503,13 +503,30 @@ h1 {
     display: flex;
     justify-content: center;
     color: #F59D20;
-    padding: 30px;
+    padding-bottom: 30px;
   }
   #contact-us {
     min-height: 400px;
     max-height: auto;
     display: flex;
     margin-bottom: 40px;
+    background-image: url(./media/compass.png);
+    background-size: cover;
+    background-position-y: 80%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #contact-us .col-6 {
+    height: auto;
+  }
+
+  #contact-us .col-6.forming {
+    background-color: white;
+    margin: 35px 60px !important;
+    -webkit-box-shadow: -5px 7px 22px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: -5px 7px 22px 0px rgba(0,0,0,0.33);
+    box-shadow: -5px 7px 22px 0px rgba(0,0,0,0.33);
   }
 
   #contact-us .contact-form {
@@ -1040,11 +1057,6 @@ color: #F59D20;
 
   }
 
-  .overall-contact {
-    background-image: url("./media/compass.png");
-    background-size: cover;
-    background-position-y: 80%;
-  }
   .info2 {
     display: flex;
     justify-content: center;
@@ -1054,12 +1066,28 @@ color: #F59D20;
   #contact-us {
     min-height: 400px;
     max-height: auto;
+    background-image: url(./media/compass.png);
     display: flex;
     margin-bottom: 40px;
+    background-size: cover;
+    background-position-y: 80%
   }
 
   #contact-us .contact-form {
     color: #F59D20;
+  }
+
+  #contact-us .col-6 {
+    height: auto;
+  }
+
+  #contact-us .col-6.forming {
+    background-color: white;
+    margin: 35px 30px !important;
+    -webkit-box-shadow: -5px 7px 22px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: -5px 7px 22px 0px rgba(0,0,0,0.33);
+    box-shadow: -5px 7px 22px 0px rgba(0,0,0,0.33);
+    padding: 20px;
   }
 
   .testimonial .content {
