@@ -590,6 +590,7 @@ width: 800px;
   }
   footer img {
     width: 80px;
+    height: 80px;
   }
   footer .center {
     display: flex;
