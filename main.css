@@ -35,7 +35,17 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
         opacity: 100%;
       }
     }
-
+    .testimonial-top {
+      height: 20px;
+      background: #F59D20;
+      border: none;
+    }
+    .testimonial-bottom {
+      height: 20px;
+      background: #104A93;
+      border: none;
+      margin-bottom: 20px;
+    }
       /* Toggles */
 
   .toggle {
@@ -70,13 +80,13 @@ main {
 /* Hero Image */
 
 #home-header {
-  height: 600px;
+  height: 500px;
   padding-top: 85px ;
   display: flex;
   background-image: url("./media/hero-image.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-position-y: -70px;
+  background-repeat: no-repeat;
 }
 
 #home-header span {
@@ -292,6 +302,7 @@ h1 {
   #home .number h3 {
     font-size: 50px;
     margin-right: 6px;
+    color: #F59D20
   }
 
   #home .number img {
