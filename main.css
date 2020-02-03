@@ -1002,6 +1002,7 @@ color: #F59D20;
   }
   footer img {
     width: 80px;
+    height: 80px;
   }
   footer .center {
     display: flex;
