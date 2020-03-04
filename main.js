@@ -29,5 +29,14 @@ $(document).ready(function () {
         }
     })
 
+    window.addEventListener('scroll', function(e) {
+        if (window.scrollY >= 80 && window.scrollY <= 200 ) {
+            $(".desktop .logo").removeClass("hidden");
+        }
+        if (window.scrollY <= 80) {
+            $(".desktop .logo").addClass("hidden");
+        }
+        
+      });
 
 })

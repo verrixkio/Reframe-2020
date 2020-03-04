@@ -169,6 +169,15 @@ h1 {
     font-size: 26px;
   }
 
+  .hidden {
+    display: none;
+  }
+  .desktop.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    padding: 25px 0 0 100px;
+  }
 
   /* Header Styling */
   header {
