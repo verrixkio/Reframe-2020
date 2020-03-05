@@ -179,6 +179,30 @@ h1 {
     padding: 25px 0 0 100px;
   }
 
+  #ex1 {
+    max-width: 830px;
+    top: 80px;
+  }
+
+  #ex1 h3 {
+    margin-bottom: 20px;
+  }
+  
+
+  #ex2 {
+    max-width: 830px;
+    top: 80px;
+  }
+
+  #ex2 h3 {
+    margin-bottom: 20px;
+  }
+
+  a button {
+    margin-top: 5px;
+  }
+  
+
   /* Header Styling */
   header {
     height: 85px;

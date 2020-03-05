@@ -30,7 +30,7 @@ $(document).ready(function () {
     })
 
     window.addEventListener('scroll', function(e) {
-        if (window.scrollY >= 80 && window.scrollY <= 200 ) {
+        if (window.scrollY >= 80 && window.scrollY <= 500 ) {
             $(".desktop .logo").removeClass("hidden");
         }
         if (window.scrollY <= 80) {
