@@ -543,7 +543,7 @@ h1 {
     max-height: auto;
     display: flex;
     margin-bottom: 40px;
-    background-image: url(./media/compass.png);
+    
     background-size: cover;
     background-position-y: 80%;
     align-content: center;
@@ -552,6 +552,12 @@ h1 {
 
   #contact-us .col-6 {
     height: auto;
+    
+  }
+
+  #contact-us .col-6.compass {
+    background-image: url("./media/compass.jpg");
+    background-size: cover;
   }
 
   #contact-us .col-6.forming {
