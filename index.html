@@ -23,12 +23,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="./main.js"></script>
   </head>
@@ -668,8 +666,9 @@
         </footer>
       </div>
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
-  var mySwiper = new Swiper ('.swiper-container', {
+  const mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     spaceBetween: 100,
     direction: 'horizontal',
