@@ -13,6 +13,11 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
  strong {
   font-weight:  bold;
 }
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: auto;
+
+}
     /* KeyFrames */
   
     @keyframes slideInFromLeft {
